@@ -1,4 +1,5 @@
 #include <filesystem>
+#include <vector>
 #include "fruits.cpp"
 #include "fruit_fill.cpp"
 #include "file_write.cpp"
@@ -6,14 +7,17 @@
 
 int main()
 {
-    Fruit_list fruit_list[5];
+    std::vector<Fruit_list> fruit_list;
     Fruit_list_fill list_fill;
     std::string folder_path = "in";
-    int count = 0;
+    
     for (const auto & entry : std::filesystem::directory_iterator(folder_path))
     {
         if (entry.path().extension() == ".txt")
-            list_fill.Fill(entry.path().string(), fruit_list[count++]);
+        {
+            fruit_list.emplace_back();
+            list_fill.Fill(entry.path().string(), fruit_list.back());
+        }
     }
     
     if (!std::filesystem::exists("out"))

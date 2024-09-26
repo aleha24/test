@@ -169,6 +169,11 @@ CMakeFiles/Task3.dir/main.cpp.obj: C:\Test\Test3\main.cpp \
  C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
  C:\Test\Test3\fruits.cpp C:\Test\Test3\fruits.hpp \
  C:\Test\Test3\fruit_fill.cpp C:\Test\Test3\fruit_fill.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/fstream \
